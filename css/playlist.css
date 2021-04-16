@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+.encabezado{
+    background-color:gainsboro;
+    
+}
+.logo{
+    width: 100%;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+.opciones{
+    text-align: center;
+    list-style-type: none;
+    background-color:gainsboro;
+    margin: auto;
+    width: 50%;
+}
+.opciones1{
+    text-align: center;
+    list-style-type: none;
+    background-color:gainsboro;
+    margin: auto;
+    width: 50%;
+}
+.opciones1 li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.opciones li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.titulo{
+    text-align: center;
+    padding: 5px;
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
+    background-color: gray;
+}
+.lista img{
+    width: 100%;
+    justify-content: center;
+    border: solid 3px white;
+}
+
+.playlist{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 50px;
+}
+.detalle{
+    padding: 5px;
+}
+.detalle a{
+    
+}
+.playlist a{
+    color: white;
+    text-decoration: none;
+    background-color: steelblue;
+    padding: 5px;
+    text-align: center;
+}
+.footer{
+    background-color: gainsboro;
+}
