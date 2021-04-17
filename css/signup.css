@@ -78,4 +78,36 @@ input[type=password]{
     border-radius: 4px;
     text-align: center;
 }   
+
+@media (min-width:1024px){
+    .logo img{
+        width: 100%;
+    }
+    .text{
+       font-size: 20px;
+       margin-top: 25px;
+    }
+    .box{
+        margin-top: 15px;
+    }
+    .inicio li a{
+        font-size: 25px;
+    }
+    .verificacion{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 20px
+    }
+    input[type=email]{
+        width: 40%;
+    }   
+    input[type=password]{
+        width: 40%;
+    } 
+    button{
+        width: 30%;
+        
+    } 
+}
   

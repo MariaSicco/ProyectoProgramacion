@@ -96,6 +96,7 @@ input[type=radio]{
 .verificacion{
     margin-top: 15px;
     font-size: 15px;
+    text-align: center;
 }
 button{
     width: 60%;
@@ -109,3 +110,44 @@ button{
     font-weight:600;
     color: white;
 }   
+@media (min-width:1024px){
+    .logo img{
+        width: 100%;
+    }
+    .text{
+       font-size: 20px;
+       margin-top: 25px;
+    }
+    .box{
+        margin-top: 15px;
+    }
+    .inicio li a{
+        font-size: 25px;
+    }
+    .verificacion{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 20px
+    }
+    input[type=text]{
+        width: 40%;
+    }   
+    
+    input[type=email]{
+        width: 40%;
+    }   
+    input[type=password]{
+        width: 40%;
+    }   
+    input[type=name]{
+        width: 40%;
+    }
+    input[type=date]{
+        width: 40%;
+    } 
+    button{
+        width: 30%;
+        
+    } 
+}
