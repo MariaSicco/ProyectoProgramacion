@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <title>Sing Up</title>
+</head>
+<body>
+    <main class="container"> 
+        <header class="encabezado">
+            <section class="navBar">
+                <article class="opcionesIzq">
+                    <figure class="logo">
+                        <img src="img/logo.jpg" alt="Logo MusicOn">
+                    </figure>
+                    <nav class="opcionesDer">
+                        <ul class="inicio">
+                            <li><a href="../ProyectoProgramacion/index.html">Inicio</a></li>
+                            <li><a href="../ProyectoProgramacion/generos.html">Generos</a></li>
+                            <li><a href="../ProyectoProgramacion/playlist.html">Playlist</a></li>
+                            <li><a href="../ProyectoProgramacion/register.html">Login</a></li>
+                        </ul>
+                    </nav>
+                </article>
+            </section>    
+        </header>    
+
+        <h1> Registrate gratis para escuchar</h1>
+        <section>
+            <form action="datos.php" method="GET">
+                <div class="text">
+                    <label for="email">¿Cual es tu correo electronico?</label>
+                </div>
+                <div class="box">
+                    <input type="email" name="mail" value="" placeholder="Introduce su correo electronico" required>
+                </div>
+                <div class="text">
+                    <label for="email">Confirma tu correo electronico</label>
+                </div>
+                <div class="box">
+                    <input type="email" name="mail" value="" placeholder="Vuelva a ntroducir su correo electronico" required>
+                </div>
+                <div class="text">
+                    <label for="password">Crea una contraseña</label>
+                </div>
+                <div class="box">
+                    <input type="password" name="password" value="" placeholder="Crea una contraseña" required>
+                </div>
+                <div class="text">
+                    <label for="name">Usuario</label>
+                </div>
+                <div class="box">
+                    <input type="text" name="user" value="" placeholder="Introduce un nombre de perfil" required>
+                </div>
+                <div class="text">
+                    <label for="date">¿Cual es tu fecha de nacimiento?</label>
+                </div>
+                <div class="box">
+                    <input type="date" name="date" id="nombre" placeholder="" required>
+                </div>
+                <div class="text">
+                    <label for="gender">¿Cual es tu sexo?</label>
+                </div>
+                <div class="box">
+                    <input type="radio" name="genero" value="" ><label>Hombre</label>
+                    <input type="radio" name="genero" value="" ><label>Mujer</label>
+                    <input type="radio" name="genero" value="" ><label>Otro</label>
+                </div>
+                <div class="verificacion">
+                    <input type="checkbox" name="verificacion" value=""> <label>Compartirt mis datos de registro con los creadores de MusicOn para fines de marketing</label>
+                </div>
+                <div class="boton">
+                    <button type="submit">Registrate</button>
+                </div>
+                
+                
+                <h3>¿Ya tienes cuenta?<a href="signup.html">Inicia Sesion</a></h3>
+                
+            </form> 
+        </section>
+</body>
+</html>

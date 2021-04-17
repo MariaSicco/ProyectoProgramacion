@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <title>Inicio Sesion</title>
+</head>
+<body>
+    <header class="encabezado">
+        <section class="navBar">
+            <article class="opcionesIzq">
+                <figure class="logo">
+                    <img src="img/logo.jpg" alt="Logo MusicOn">
+                </figure>
+                <nav class="opcionesDer">
+                    <ul class="inicio">
+                        <li><a href="../ProyectoProgramacion/index.html">Inicio</a></li>
+                        <li><a href="../ProyectoProgramacion/generos.html">Generos</a></li>
+                        <li><a href="../ProyectoProgramacion/playlist.html">Playlist</a></li>
+                        <li><a href="#"></a>Login</li>
+                    </ul>
+                </nav>
+            </article>
+        </section>    
+    </header>    
+    
+    <h2>Para continuar inicie sesion en MusicOn</h2>
+    <section>
+        <form action="datos.php" method="GET">
+            <div class="text">
+                <label>Correo electrónico o nombre de usuario</label>
+            </div>
+            <div class="box">
+                <input type="email" name="mail" value="" placeholder="Correo electrónico o nombre de usuario" required>
+            </div>
+            <div class="text">
+                <label>Contraseña</label>
+            </div>
+            <div class="box">
+                <input type="password" name="password" value="" placeholder="Contraseña" required>
+            </div>
+            <div class="boton">
+                <button type="submit">Iniciar Sesion</button>
+            </div>
+            
+            
+            <h3>¿No tienes cuenta? <a href="../ProyectoProgramacion/register.html" >Registrate en Spotify</a></h3>
+            
+        </form>
+    </section>
+</body>
+</html>
