@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Staatliches', cursive;
+    background-color: black;
+    color: white;
+}
+.logo img{
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 300px;
+}
+.opcionesDer{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.opcionesDer a{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin: 15px;
+}
+.datosdelartista img{
+    width: 90%;
+    border: solid 3px rgb(255, 123, 196);
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgb(222, 255, 78);
+    color: black;
+    font-size: 20px;
+}
+h3{
+    margin-left: 20px;
+}
+ol{
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+.datosdelartista p{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.acercadetini{
+    text-align: start;
+    margin: 0px 15px 15px 15px;
+}
+.opcIzq a{
+    color: white;
+}
+.opcDer a{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+@media (min-width:768px){
+    .encabezado{
+        display:flex;
+    }
+    .logo img{
+        display: flex;
+        width: 100%;
+        height: 20%;
+        justify-content: center;
+    }
+    .inicio{
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        font-size: 30px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    .datosdelartista img{
+    width: 100%;
+    height: 25%;
+    border: solid 3px rgb(255, 123, 196);
+    margin-left: 0%;
+    }
+    h3{
+        font-size: 40px;
+    }
+    p{
+       font-size: 30px; 
+    }
+    ol{
+        font-size: 30px;
+        margin-left: 60px;
+    }
+    .acercadetini{
+        margin: 5px 30px 30px 30px;
+    }
+}
+@media (min-width:1024px){
+    .encabezado{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        width: 100%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .inicio{
+        width: 100%;
+    }
+    .datosdelartista img{
+        height: 25%;
+        width: 50%;
+        margin-left: 25%;
+}
+    img{
+        display: flex;
+        justify-content: center;
+    }
+    h3{
+        margin-left: 50px;
+    }
+    ol{
+        margin-left: 80px;
+    }
+    .acercadetini{
+        margin: 10px 55px 55px 55px;
+    }
+}
