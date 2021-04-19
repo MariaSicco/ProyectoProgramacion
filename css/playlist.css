@@ -10,14 +10,20 @@ img{
     width: 100%;
     justify-content: center;
     border: solid 3px white;
+    margin-top: 20px;
 }
 .detalle{
     text-align: center;
+    
+}
+.detalle p{
+    margin-bottom: 20px;
 }
 .detalle p a{
+    border-radius: 10px;
     background-color:  rgb(222, 255, 78);
     color: black;
-    
+    padding: 10px;
 }
 
 
