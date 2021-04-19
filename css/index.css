@@ -41,13 +41,14 @@ h2{
     margin-bottom: 20px;
     background-color: rgb(222, 255, 78);
     color: black;
+    margin-top: 20px;
 }
 h3{
     text-align: center;
 }
 p{
     text-align: center;
-    margin-bottom: 20px;
+    
 }
 .artistas h3{
     margin: 20px;
@@ -55,10 +56,28 @@ p{
 .opcIzq a{
     color: white;
 }
+.opcIzq p{
+    margin-bottom: 20px;
+}
 .opcDer a{
     color: white;
     text-align: center;
     margin: 20px;
+}
+.opcDer p{
+    margin-bottom: 20px;
+}
+.lista{
+    text-align: center;
+}
+.generos{
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 30px;
+}
+.GENEROS li {
+    font-size: 25px;
 }
 
 @media (min-width:768px){
