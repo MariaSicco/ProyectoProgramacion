@@ -56,7 +56,8 @@ img{
     border: solid 3px white;
     justify-content: center;
     width: 70%;
-    
+    margin-left: 15%;
+    margin-right:15%; 
 }
 .lista{
     padding: 10px;
@@ -140,6 +141,9 @@ p{
         display: flex;
         justify-content: space-between;
         width: 95%;
+        margin: 0px;
+        margin-left: 10px;
+
     }
     .masEsc{
         display: flex;
