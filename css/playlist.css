@@ -25,6 +25,13 @@ img{
     color: black;
     padding: 10px;
 }
+.detalle p a:hover{
+    color: rgb(222, 255, 78);
+    background-color: black;
+    border-radius: 10px;
+    font-family: 'Staatliches', cursive;
+    border: solid rgb(222, 255, 78) 2px;
+}
 
 
 @media (min-width:768px){

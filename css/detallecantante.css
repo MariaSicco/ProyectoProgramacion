@@ -50,10 +50,45 @@ h2{
 h3{
     margin-left: 20px;
 }
-ol{
-    margin-left: 30px;
+.boton{
+    margin-left: 0%;
+    text-align: center;
+    color:black;
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    background-color: rgb(222, 255, 78);
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    }
+.boton:hover{
+    color: rgb(222, 255, 78);
+    background-color: black;
+    border-radius: 10px;
+    font-family: 'Staatliches', cursive;
+    border: solid rgb(222, 255, 78) 2px;
+}
+.canciones{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.nombre{
+    width: 100%;
+    margin-top: 5px;
+    width: 100%;    
+}
+ol li{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
+    text-align: left;
+    border-bottom:solid gray 1px ;
+    justify-content: space-between;
+    padding: 13px;
 }
 .datosdelartista p{
     font-family: 'Roboto', sans-serif;
@@ -102,6 +137,10 @@ p{
     border: solid 3px rgb(255, 123, 196);
     margin-left: 0%;
     }
+    .boton{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
     h3{
         font-size: 40px;
     }
@@ -110,7 +149,6 @@ p{
     }
     ol{
         font-size: 30px;
-        margin-left: 60px;
     }
     .acercadetini{
         margin: 5px 30px 30px 30px;
@@ -134,16 +172,21 @@ p{
         height: 25%;
         width: 50%;
         margin-left: 25%;
-}
+        margin-bottom: 40px;
+    }
     img{
         display: flex;
         justify-content: center;
+    }
+    .boton{
+        margin-bottom: 40px;
     }
     h3{
         margin-left: 50px;
     }
     ol{
-        margin-left: 80px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .acercadetini{
         margin: 10px 55px 55px 55px;
