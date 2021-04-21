@@ -76,9 +76,15 @@ p{
     text-decoration: none;
     font-size: 30px;
 }
-.GENEROS li {
+.genero li {
     font-size: 25px;
 }
+.genero li a {
+    color: white;
+    font-size: 40px;
+
+}
+
 
 @media (min-width:768px){
 .encabezado{
