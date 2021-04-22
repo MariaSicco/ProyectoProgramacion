@@ -28,14 +28,17 @@ img{
 a{
     text-decoration: none;
 }
-.cancion img{
-    width: 90%;
+.fotodua{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fotodua img{
+    width: 80%;
     border: solid 3px rgb(94, 191, 255);
-    margin-left: 20px;
     margin-bottom: 10px;
 }
 h1{
-    text-align: center;
     font-size: 25px;
     color: white;
     margin: 15px;
@@ -50,10 +53,30 @@ h3{
     margin-left: 20px;
     margin-bottom: 5px;
 }
-.canciones{
+.boton{
+    margin-left: 0%;
+    text-align: center;
+    color:black;
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    background-color: rgb(222, 255, 78);
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+.boton:hover{
+    color: rgb(222, 255, 78);
+    background-color: black;
+    border-radius: 10px;
+    font-family: 'Staatliches', cursive;
+    border: solid rgb(222, 255, 78) 2px;
+}
+.trackdua{
     display: flex;
-    justify-content: space-between;
-    font-size: 12px;
+    flex-direction: column;
+    margin-left: 20px;
 }
 .nombre{
     width: 100%;
@@ -62,7 +85,6 @@ h3{
 }
 ol li{
     display: flex;
-    margin-left: 5px;
     margin-right: 5px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
@@ -73,35 +95,13 @@ ol li{
     padding: 13px;
 }
 .dualipa{
-    margin-left: 20px;
     font-size: 20px;
     margin-bottom: 5px;
 }
 .nombredisco{
-    margin-left: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     margin-bottom: 20px;
-}
-.boton{
-    margin-left: 0%;
-    text-align: center;
-    color:black;
-    font-size: 20px;
-    font-family: 'Staatliches', cursive;
-    background-color: rgb(222, 255, 78);
-    border-radius: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    }
-.boton:hover{
-    color: rgb(222, 255, 78);
-    background-color: black;
-    border-radius: 10px;
-    font-family: 'Staatliches', cursive;
-    border: solid rgb(222, 255, 78) 2px;
 }
 h4{
     text-align: center;
@@ -158,10 +158,8 @@ h2{
     h1{
         font-size: 50px;
     }
-    .cancion img{
-        width: 100%;
+    .fotodua img{
         height: 25%;
-        margin-left: 0%;
     }
     h3{
         font-size: 40px;
@@ -211,10 +209,9 @@ h2{
         .inicio{
             width: 100%;
         }
-        .cancion img{
+        .fotodua img{
             height: 25%;
             width: 50%;
-            margin-left: 25%;
             margin-bottom: 40px;
         }
         img{

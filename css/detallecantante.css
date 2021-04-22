@@ -199,4 +199,10 @@ p{
     .acercadetini{
         margin: 10px 55px 55px 55px;
     }
+    .opcDer h2{
+        text-align: center;
+    }
+    .opcIzq h2{
+        text-align: center;
+    }
 }
