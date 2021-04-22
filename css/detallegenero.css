@@ -3,6 +3,34 @@
     margin: 0;
     padding: 0;
 }
+/* Genero*/
+.generos{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.gen a {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+     
+}
+img{
+    width: 100%;
+    height: 300px;
+}
+.gen img{
+    width: 100%;
+    justify-content: center;
+    border: solid 3px white;
+}
+.gen{
+    padding: 50px;
+}
+
+
+/* Detalle genero*/
 body {
     font-family: 'Staatliches', cursive;
     background-color: black;
@@ -54,7 +82,7 @@ img{
 .lista img{
     align-items: center;
     border: solid 3px white;
-    justify-content: center;
+    
     width: 70%;
     margin-left: 15%;
     margin-right:15%; 
@@ -115,6 +143,23 @@ p{
     margin-bottom: 20px;
 }
 @media (min-width:768px){
+    /*Genero*/
+    .generos{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .gen {
+        padding: 15px;
+        width: 45%;
+        margin: 0;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .opcIzq{
+        margin-top: 50px;
+    }
+    /* Detalle genero*/
     .encabezado{
         display:flex;
     }
@@ -171,8 +216,22 @@ p{
     .opcDer a{
         font-size: 25px;
     }
+
 }
 @media (min-width:1024px){
+    /* Genero*/
+    .gen {
+        width: 30%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .opcIzq{
+        margin-top: 50px;
+    }
+    /* Detalle Genero*/
     .encabezado{
         display: flex;
         justify-content: center;
