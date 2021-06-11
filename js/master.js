@@ -7,30 +7,34 @@ fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127'
     return response.json()
 })
 .then(function(dataMusica){
-    console.log(dataMusica);
+    //console.log(dataMusica);
+    musica.innerHTML += `<article class='lista'> <img src=${dataMusica.cover_big}> <h1>${dataMusica.title}</h1> </article>`
+       
+    
 })
 .catch(function(error){
     console.log(error);
 })
-//Hay que arreglarlo
 
-//Fetch Top Albums
-let musica = document.querySelector('.musica');
 
-fetch ('')
+//Fetch Artistas
+let artistas = document.querySelector('.artista')
+
+fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27')
 
 .then(function(response){
     return response.json()
 })
-.then(function(dataMusica){
-    console.log(dataMusica);
+.then(function(dataArtista){
+    //console.log(dataArtista)
+    artistas.innerHTML += `<article class='lista'> <img src=${dataArtista.picture_big}> <h1>${dataArtista.name}</h1> </article>`
 })
 .catch(function(error){
     console.log(error);
 })
 
 //Fetch Artistas
-let musica = document.querySelector('.musica');
+/*
 
 fetch ('')
 
@@ -43,3 +47,4 @@ fetch ('')
 .catch(function(error){
     console.log(error);
 })
+*/
