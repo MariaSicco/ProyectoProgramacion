@@ -1,0 +1,19 @@
+let generos = document.querySelector('.generos');
+
+fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/`)
+
+.then(function(response){
+    return response.json()
+})
+.then(function(dataGeneros){
+    console.log(dataGeneros);
+    for(let i = 0; i < 9; i++){
+        generos.innerHTML += `<article class='gen'> <img src=${dataGeneros.data[i].picture_big}> <h1>${dataGeneros.data[i].name}</h1> </article>`
+    }
+    
+       
+    
+})
+.catch(function(error){
+    console.log(error);
+})
