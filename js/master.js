@@ -1,14 +1,17 @@
 //Fetch Canciones del momento
 let musica = document.querySelector('.musica');
 
-fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127')
+fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks')
 
 .then(function(response){
     return response.json()
 })
 .then(function(dataMusica){
-    //console.log(dataMusica);
-    musica.innerHTML += `<article class='lista'> <img src=${dataMusica.cover_big}> <h1>${dataMusica.title}</h1> </article>`
+    console.log(dataMusica);
+    for(let i = 0; i < 6;i++){
+        musica.innerHTML += `<article class='lista'> <img src=${dataMusica.data[i].cover_big}> <h1>${dataMusica.data[i].title}</h1> </article>`
+    }
+    
        
     
 })
@@ -20,31 +23,38 @@ fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127'
 //Fetch Artistas
 let artistas = document.querySelector('.artista')
 
-fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27')
+
+
+fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists')
 
 .then(function(response){
     return response.json()
 })
 .then(function(dataArtista){
-    //console.log(dataArtista)
-    artistas.innerHTML += `<article class='lista'> <img src=${dataArtista.picture_big}> <h1>${dataArtista.name}</h1> </article>`
+    console.log(dataArtista)
+    for(let i = 0; i < 6; i++){
+        artistas.innerHTML += `<article class='lista'> <a href="detallecantante.html?${dataArtista.id}"> <img src=${dataArtista.data[i].picture_big}> </a> <h1>${dataArtista.data[i].name}</h1> </article> `
+    }
+    
 })
 .catch(function(error){
     console.log(error);
 })
 
-//Fetch Artistas
-/*
+//Fetch Albums
+let albums = document.querySelector('.albums')
 
-fetch ('')
+fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums')
 
 .then(function(response){
     return response.json()
 })
-.then(function(dataMusica){
-    console.log(dataMusica);
+.then(function(dataAlbums){
+    console.log(dataAlbums);
+    for(let i = 0; i < 6;i++){
+        albums.innerHTML += `<article class='lista'> <img src=${dataAlbums.data[i].cover_big}> <h1>${dataAlbums.data[i].title}</h1> </article>`  
+    }
 })
 .catch(function(error){
     console.log(error);
 })
-*/
