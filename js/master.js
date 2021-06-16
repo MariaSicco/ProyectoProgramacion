@@ -9,7 +9,7 @@ fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/track
 .then(function(dataMusica){
     console.log(dataMusica);
     for(let i = 0; i < 6;i++){
-        musica.innerHTML += `<article class='lista'> <img src=${dataMusica.data[i].cover_big}> <h1>${dataMusica.data[i].title}</h1> </article>`
+        musica.innerHTML += `<article class='lista'> <img src=${dataMusica.data[i].album.cover_big}> <h1>${dataMusica.data[i].title}</h1> </article>`
     }
     
        
