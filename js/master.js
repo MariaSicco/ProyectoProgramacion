@@ -33,7 +33,7 @@ fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artis
 .then(function(dataArtista){
     console.log(dataArtista)
     for(let i = 0; i < 6; i++){
-        artistas.innerHTML += `<article class='lista'> <a href="detallecantante.html?${dataArtista.id}"> <img src=${dataArtista.data[i].picture_big}> </a> <h1>${dataArtista.data[i].name}</h1> </article> `
+        artistas.innerHTML += `<article class='lista'> <a href="detallecantante.html?&id=${dataArtista.id}"> <img src=${dataArtista.data[i].picture_big}> </a> <h1>${dataArtista.data[i].name}</h1> </article> `
     }
     
 })
