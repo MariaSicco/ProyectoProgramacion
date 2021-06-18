@@ -1,11 +1,11 @@
 let artista = document.querySelector('.detalleArtista')
-
+console.log(artista)
 
 let objetoId = new URLSearchParams(location.search)
 let id = objetoId.get('id')
 
 
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27${id}`)
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
 
 .then(function(respuesta){
     return respuesta.json()
