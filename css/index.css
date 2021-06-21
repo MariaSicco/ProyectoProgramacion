@@ -85,7 +85,9 @@ p{
     font-size: 40px;
 
 }
-
+.disco{
+    display: block;
+}
 
 @media (min-width:768px){
 .encabezado{
@@ -114,6 +116,29 @@ h2{
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
+    justify-content: center;
+    
+}
+.musica h1{
+    color: white;
+}
+.artista {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+}
+.artista h1{
+    color: white;
+}
+.albums{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+}
+.albums h1{
+    color: white;
 }
 .lista img{
     display: flex;

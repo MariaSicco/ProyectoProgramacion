@@ -20,3 +20,4 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
     console.log(error)
 })
 
+artista.classList.add('fotoArt')

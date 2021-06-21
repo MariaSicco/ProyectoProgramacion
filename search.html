@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto </title>
     <link rel="stylesheet" href="../ProyectoProgramacion/css/index.css">
+    <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="container"> 
- <!-- HEADER -->
+
+        <!-- HEADER -->
         <header class="encabezado">
             <section class="navBar">
                 <article class="opcionesIzq">
@@ -21,65 +23,32 @@
                     </figure>
                     <nav class="opcionesDer">
                         <ul class="inicio">
-                            <li><a href="../ProyectoProgramacion/index.html">Inicio</a></li>
                             <li><a href="../ProyectoProgramacion/generos.html">Generos</a></li>
                             <li><a href="../ProyectoProgramacion/playlist.html">Playlist</a></li>
                             <li><a href="../ProyectoProgramacion/register.html">Login</a></li>
-                            <form action="/form-result.php" method="POST" target="_blank">
-                                <li>
-                                    <input type="search" name="buscar" placeholder="canción, artista, albúm...">
-                                    <input type="submit" name="" id="" value="buscar"> 
-                                </li>
-                            </form> 
-                            <li>
-                                <a href="search.html">
-                                    <form class="uk-search uk-search-default">
-                                        <input class="uk-search-input" type="search" placeholder="Search...">
-                                    </form>
-                                </a>
-                            </li>
+                            <section class="buscar">
+                                <form action="search.html" method="GET" target="_blank">
+                                    <li>
+                                        <input type="search" name="buscar" placeholder="canción, artista, albúm...">
+                                        <input type="submit" name="" id="" value="buscar"> 
+                                    </li>
+                                </form> 
+                            </section>
+                           
                         </ul>
                     </nav>
                 </article>
             </section>    
         </header>    
-<!-- HOME -->
-        <section class="musica">
-            <article class="lista">
-                <a href="detallecancion.html"><img src="../ProyectoProgramacion/img/cacnionDuaLipa.jpg" alt=""></a>
-                <h3>Room For 2</h3>
-                <p>Dua Lipa</p>
-            </article>
-            <article class="lista">
-                <a href="detallecancion.html"><img src="../ProyectoProgramacion/img/cancionLunay.jpg" alt=""></a>
-                <h3> A Solas</h3>
-                <p>Lunay</p>
-            </article>
-            <article class="lista">
-                <a href="detallecancion.html"><img src="../ProyectoProgramacion/img/jeans.jpg" alt=""></a>
-                <h3>Jeans</h3>
-                <p>Justin Quiles</p>
-            </article>
-            <article class="lista">
-                <a href="detalledisco.html"><img src="../ProyectoProgramacion/img/disco3.jpg" alt="disco3"></a>
-                <h3>Destoyer</h3>
-                <p>Kiss</p>
-            </article>
-            <article class="lista">
-                <a href="detalledisco.html"> <img src="../ProyectoProgramacion/img/disco4.jpg" alt="disco4"></a>
-                <h3>For those about to rock</h3>
-                <p>ACDC</p>
-            </article>
-            <article class="lista">
-                <a href="detallecantante.html"><img src="../ProyectoProgramacion/img/artista5.jpg" alt="foto5"></a>
-                <h3>J Balvin</h3>
-            </article>
-            <article class="lista">
-                <a href="detallecantante.html"><img src="../ProyectoProgramacion/img/artista6.jpg" alt="foto6"></a>
-                <h3>Tini</h3>
-            </article>
-        </section>
-<!-- FOOTER -->
+        <main>
+            <h2 class="titulo">Resultado de busqueda para: </h2>
+                
+            <section class="resultados">
+    
+            </section>
+        </main>
+
+ <!--FOOTER -->
         <footer>
             <section class="opcIzq">
                 <h2>Seguinos en las redes!</h2>
@@ -94,6 +63,7 @@
                 <p><a href="mailto:frolon@udesa.edu.ar">frolon@udesa.edu.ar</a></p>
             </section>
         </footer>
-    </main>            
+    </main> -->    
+    <script src="js/search.js"></script> 
 </body>
 </html>

@@ -1,0 +1,23 @@
+
+.resultados a{
+    color:white;
+    font-size: 17px;
+}
+
+@media (min-width:768px){
+    .resultados a{ 
+        font-size: 25px;
+    }
+    .tituloBusqueda{
+        font-size: 40px;
+        
+    }
+}
+@media (min-width:1024px){
+    .resultados a{
+        font-size: 35px;
+    }
+    .tituloBusqueda{
+        font-size: 50px; 
+    }
+}

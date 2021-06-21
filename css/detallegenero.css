@@ -7,7 +7,6 @@
 .generos{
     display: flex;
     flex-wrap: wrap;
-    
 }
 .gen a {
     width: 50%;
@@ -147,7 +146,6 @@ p{
     .generos{
         display: flex;
         justify-content: center;
-       
     }
     .gen {
         padding: 15px;

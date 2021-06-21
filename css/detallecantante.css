@@ -117,6 +117,20 @@ p{
     text-align: center;
     margin: 20px;
 }
+/*CSS JS*/
+.fotoArt {
+    padding: 20px; 
+}
+.fotoArt img{
+    border:solid white;
+}
+
+.fotoArt h1{
+    font-size:40px ;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 @media (min-width:768px){
     .encabezado{
         display:flex;
@@ -162,6 +176,23 @@ p{
     .acercadetini{
         margin: 5px 30px 30px 30px;
     }
+    /*CSS JS*/
+    .fotoArt {
+        margin-top: 30px;
+        padding-right:70px;
+        padding-left: 70px;
+         
+    }
+    .fotoArt img{
+        height: 450px;
+    }
+
+    .fotoArt h1{
+        font-size:60px ;
+        margin-bottom: 10px;
+
+    }
+
 }
 @media (min-width:1024px){
     .encabezado{
@@ -205,4 +236,19 @@ p{
     .opcIzq h2{
         text-align: center;
     }
+    /*CSS JS*/
+    .fotoArt {
+        padding-right:100px;
+        padding-left: 100px;
+         
+    }
+    .fotoArt img{
+        height: 550px;
+    }
+
+    .fotoArt h1{
+        font-size:60px ;
+        margin-bottom: 15px;
+    }
+
 }
