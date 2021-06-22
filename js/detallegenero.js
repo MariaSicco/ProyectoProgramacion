@@ -7,15 +7,15 @@ let id = objetoId.get('id')
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`)
 
-.then(function(respuesta){
+.then(respuesta=>{
     return respuesta.json()
 })
 
-.then(function(genres){
+.then(genres=>{
     console.log(genres)
     //genres.innerHTML += `<article> <img src="${cantante.picture_big}"> <h1>${cantante.name}</h1> </article>`
     
 })
-.catch(function(error){
+.catch(error=>{
     console.log(error)
 })

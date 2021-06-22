@@ -7,11 +7,11 @@ let id = objetoId.get('id')
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
 
-.then(function(respuesta){
+.then(respuesta=>{
     return respuesta.json()
 })
 
-.then(function(album){
+.then(album=>{
     console.log(album)
     
     albums.innerHTML += `<article>
@@ -30,6 +30,6 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
     //Nombre del genero
     //Fecha de publicacion
 })
-.catch(function(error){
+.catch(error=>{
     console.log(error)
 })
