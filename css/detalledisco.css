@@ -175,6 +175,39 @@ h2{
     margin-bottom: 20px;
     
 }
+.fotos{
+    padding: 20px;
+}
+.fotos img{
+    border:solid white;
+}
+
+.nombreAlbum{
+    font-size:40px ;
+    text-align: center;
+    margin-bottom: 15px;
+    
+    
+}
+.nombreArtista{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+    
+}
+.fecha{
+    font-size:20px ;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+.generos{
+    font-size:20px ;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
 
 @media (min-width:768px){
     .encabezado{
@@ -243,6 +276,28 @@ h2{
     .opcDer a{
         font-size: 25px;
     }
+    .fotos{
+        margin-top: 30px;
+        padding-right:70px;
+        padding-left: 70px;
+        
+    }
+    .fotos img{
+        
+        height: 450px;
+    }
+
+    .nombreAlbum{
+        font-size:60px ;
+        margin-bottom: 15px;
+    }
+    .fecha{
+      
+        font-size: 30px;
+    }
+    .generos{
+        font-size: 20px;
+    }
 }
 @media (min-width:1024px){
     .encabezado{
@@ -295,7 +350,27 @@ h2{
     }
     .canciones{
         font-size: 17px;
-    }  
+    } 
+    
+    .fotos{
+        padding-right:100px;
+        padding-left: 100px;
+    }
+    .fotos img{
+        height: 550px;
+    }
+
+    .nombreAlbum{
+        font-size:70px ;
+        margin-bottom: 15px;
+    }
+    .fecha{
+    
+        font-size: 30px;
+    }
+    .generos{
+        font-size: 25px;
+    } 
    
 }
 
