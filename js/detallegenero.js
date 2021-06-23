@@ -1,21 +1,23 @@
-let generos = document.querySelector('.genres')
+let fotoArtista = document.querySelector('.fotoArtista')
 
 
 let objetoId = new URLSearchParams(location.search)
 let id = objetoId.get('id')
 
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/artists`)
 
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`)
-
-.then(respuesta=>{
-    return respuesta.json()
+.then(response=>{
+    return response.json()
 })
-
-.then(genres=>{
-    console.log(genres)
-    //genres.innerHTML += `<article> <img src="${cantante.picture_big}"> <h1>${cantante.name}</h1> </article>`
+.then(dataGenero=>{
     
+  for(i=0; i<12; i++){
+    fotoArtista.innerHTML += `<main class="caja"><article class="fotos"> <img src="${dataGenero.data[i].picture_big}">  </article><p class="nombreArt">${dataGenero.data[i].name}</p></main>`
+
+  }
 })
 .catch(error=>{
-    console.log(error)
+    console.log(error);
 })
+
+fotoArtista.classList.add('fotoArtista')
