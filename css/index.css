@@ -25,6 +25,12 @@ img{
 .musica{
     padding: 20px;
 }
+.artista{
+    padding: 20px;
+}
+.albums{
+    padding: 20px;
+}
 .opcionesDer{
     text-align: center;
     color: white;
@@ -41,7 +47,7 @@ h2{
     margin-bottom: 10px;
     background-color: rgb(222, 255, 78);
     color: black;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 h3{
     text-align: center;
@@ -70,6 +76,7 @@ p{
 }
 .lista{
     text-align: center;
+    color: white;
 }
 .generos{
     text-align: center;
@@ -87,6 +94,10 @@ p{
 }
 .disco{
     display: block;
+}
+h1{
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 @media (min-width:768px){

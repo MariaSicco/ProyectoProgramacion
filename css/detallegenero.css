@@ -4,6 +4,11 @@
     padding: 0;
 }
 /* Genero*/
+body{
+        font-family: 'Staatliches', cursive;
+        background-color: black;
+        color: white;
+}
 .generos{
     display: flex;
     flex-wrap: wrap;
@@ -25,16 +30,11 @@ img{
     border: solid 3px white;
 }
 .gen{
-    padding: 50px;
+    padding: 20px;
 }
 
 
 /* Detalle genero*/
-body {
-    font-family: 'Staatliches', cursive;
-    background-color: black;
-    color: white;
-}
 .logo img{
     width: 100%;
     height: 100px;
@@ -57,21 +57,20 @@ img{
     color: white;
 }
 h1{
+    text-align: center;
+    margin-bottom: 10px;
     background-color: rgb(222, 255, 78);
     color: black;
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    text-decoration: none;
     
 }
 h2{
-    font-size: 18px;
     text-align: center;
-    margin-bottom: 15px;
-    color: rgb(255, 123, 196);
-    border-top:solid gray 1px ;
-    border-bottom:solid gray 1px ;
-    padding: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(222, 255, 78);
+    color: black;
+    margin-top: 10px;
 }
 img{
     width: 100%;
@@ -96,17 +95,6 @@ h3{
     margin-bottom: 5px;
     text-align: center; 
 }
-p{
-    font-family:sans-serif;
-    margin-bottom: 7px;
-    font-size: 14px;
-    text-align: center; 
-}
-.oyente{
-    color: gray;
-    font-size: 12px;
-}
-
 .opcIzq a{
     
     color: white;
@@ -119,9 +107,6 @@ p{
     background-color: rgb(222, 255, 78);
     color: black;
     font-size: 15px;
-}
-.foot{
-    font-family: 'Staatliches', cursive;
 }
 .opcIzq a{
     color: white;

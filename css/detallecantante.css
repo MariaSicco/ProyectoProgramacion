@@ -28,13 +28,6 @@ img{
 a{
     text-decoration: none;
 }
-.datosdelartista{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
 h2{
     margin-bottom: 20px;
     background-color: rgb(222, 255, 78);
@@ -43,11 +36,6 @@ h2{
     padding-left: 100px;
     padding-right: 100px;
 }
-.datosdelartista img{
-    width: 80%;
-    border: solid 3px rgb(255, 123, 196);
-    margin-bottom: 20px;
-}
 h1{
     font-size: 25px;
     color: white;
@@ -55,25 +43,6 @@ h1{
 }
 h3{
     margin-left: 20px;
-}
-.boton{
-    margin-left: 0%;
-    text-align: center;
-    color:black;
-    font-size: 20px;
-    font-family: 'Staatliches', cursive;
-    background-color: rgb(222, 255, 78);
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.boton:hover{
-    color: rgb(222, 255, 78);
-    background-color: black;
-    border-radius: 10px;
-    font-family: 'Staatliches', cursive;
-    border: solid rgb(222, 255, 78) 2px;
 }
 .canciones{
     display: flex;
@@ -85,20 +54,6 @@ h3{
     width: 100%;
     margin-top: 5px;
     width: 100%;    
-}
-ol li{
-    display: flex;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 20px;
-    text-align: left;
-    border-bottom:solid gray 1px ;
-    justify-content: space-between;
-    padding: 13px;
-}
-.datosdelartista p{
-    font-family: 'Roboto', sans-serif;
 }
 p{
     text-align: center;
@@ -243,7 +198,7 @@ p{
          
     }
     .fotoArt img{
-        height: 550px;
+        height: 570px;
     }
 
     .fotoArt h1{
