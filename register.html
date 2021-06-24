@@ -1,93 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title><link rel="stylesheet" href="../ProyectoProgramacion/css/index.css">
     <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <title>Sing Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliche">
+    <script src="js/register.js"></script>
+
 </head>
 <body>
-    <main class="container"> 
-        <header class="encabezado">
-            <section class="navBar">
-                <article class="opcionesIzq">
-                    <figure class="logo">
-                        <img src="img/logo.jpg" alt="Logo MusicOn">
-                    </figure>
-                    <nav class="opcionesDer">
-                        <ul class="inicio">
-                            <li><a class="genero" href="../ProyectoProgramacion/index.html">Inicio</a></li>
-                            <li><a class="usuario" href="../ProyectoProgramacion/generos.html">Generos</a></li>
-                            <li><a class="play" href="../ProyectoProgramacion/playlist.html">Playlist</a></li>
-                            <section class="buscar">
-                                <form action="search.html" method="GET" target="_blank">
-                                        <input type="search" name="buscar" placeholder="canción, artista, albúm...">
-                                        <input type="submit" name="" id="" value="buscar">    
-                                </form> 
-                            </section>
-                        </ul>
-                    </nav>
-                </article>
-            </section>    
-        </header>    
-
-        <h1> Registrate gratis para escuchar</h1>
-        <section class="form">
-            <form action="datos.php" method="GET">
-                <div class="text">
-                    <label for="email">¿Cual es tu correo electronico?</label>
-                </div>
-                <div class="box">
-                    <input type="email" name="mail" value="" placeholder="Introduce su correo electronico" required>
-                </div>
-                </div>
-                <div class="text">
-                    <label for="email">Confirma tu correo electronico</label>
-                </div>
-                <div class="box">
-                    <input type="email" name="mail" value="" placeholder="Vuelva a ntroducir su correo electronico" required>
-                </div>
-                <div class="text">
-                    <label for="password">Crea una contraseña</label>
-                </div>
-                <div class="box">
-                    <input type="password" name="password" value="" placeholder="Crea una contraseña" required>
-                </div>
-                <div class="text">
-                    <label for="name">Usuario</label>
-                </div>
-                <div class="box">
-                    <input type="text" name="user" value="" placeholder="Introduce un nombre de perfil" required>
-                </div>
-                <div class="text">
-                    <label for="date">¿Cual es tu fecha de nacimiento?</label>
-                </div>
-                <div class="box">
-                    <input type="date" name="date" id="nombre" placeholder="" required>
-                </div>
-                <div class="text">
-                    <label for="gender">¿Cual es tu sexo?</label>
-                </div>
-                <div class="box">
-                    <input type="radio" name="genero" value="" ><label>Hombre</label>
-                    <input type="radio" name="genero" value="" ><label>Mujer</label>
-                    <input type="radio" name="genero" value="" ><label>Otro</label>
-                </div>
-                <div class="verificacion">
-                    <input type="checkbox" name="verificacion" value=""> <label>Compartirt mis datos de registro con los creadores de MusicOn para fines de marketing</label>
-                </div>
-                <div class="boton">
-                    <button type="submit">Registrate</button>
-                </div> 
-                
-                
-                <h3>¿Ya tienes cuenta? <a href="signup.html"> Inicia Sesion</a></h3>
-                
-            </form> 
-        </section>
-        <script src="js/register.js"></script>
+    <main class="conmtainer">
+        <h1>Registrate gratis para escuchar</h1>
+        <form action="datos.html" method="GET" >
+            <label for="name">Usuario</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" placeholder="Indique su nombre">
+            <br>
+            <span id="mensaje"></span>
+            <br>
+            <input type="submit" value="Registrarme">
+        </form>
+        <br>
+        <a id="enlace" href="https://adanielf.wordpress.com" target="__blank">Daniel Fuentes</a>
+    </main>
 </body>
 </html>

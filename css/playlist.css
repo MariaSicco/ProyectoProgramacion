@@ -32,7 +32,23 @@ img{
     font-family: 'Staatliches', cursive;
     border: solid rgb(222, 255, 78) 2px;
 }
-
+/* CSS DEL SEARCH*/
+.inicio{
+    align-items: center;
+  
+}
+.buscador{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.mensajeError{
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(238, 83, 148)
+}
 
 @media (min-width:768px){
     .encabezado{
