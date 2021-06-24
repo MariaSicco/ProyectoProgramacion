@@ -128,34 +128,34 @@ mailPancho.addEventListener('mouseout', function(){
 
 //Validando Formulario Search
 let formulario = document.querySelector('form');
-let nombre = document.querySelector('#nombre');
+let buscar1 = document.querySelector('#buscar');
 
 let mensaje = document.getElementById('mensaje')
 
 formulario.addEventListener('submit',function(e){
     e.preventDefault();
-    if(nombre.value === ''){
+    if(buscar1.value === ''){
         mensaje.innerHTML = ' ⊗ El campo nombre no puede estar vacio';
         mensaje.classList.add('mensajeError');
-        nombre.focus();
-    }else if(nombre.value.length < 3){
+        buscar1.focus();
+    }else if(buscar1.value.length < 3){
         mensaje.innerHTML = '⊗ La cantidad mínima de caracteres son tres';
         mensaje.classList.add('mensajeError');
-        nombre.focus();
+        buscar1.focus();
     }else{
         formulario.submit();
     }
 })
 
-nombre.addEventListener('input', function(){
+buscar1.addEventListener('input', function(){
     mensaje.innerHTML = '';
     mensaje.classList.remove('mensajeError');
 })
-nombre.addEventListener('focus', function(){
-    nombre.style.color = 'black';
-    nombre.style.backgroundColor = 'rgb(222, 255, 78)';
+buscar1.addEventListener('focus', function(){
+    buscar1.style.color = 'black';
+    buscar1.style.backgroundColor = 'rgb(222, 255, 78)';
 })
-nombre.addEventListener('blur', function(){
-    nombre.style.color = 'black';
-    nombre.style.backgroundColor = 'white';
+buscar1.addEventListener('blur', function(){
+    buscar1.style.color = 'black';
+    buscar1.style.backgroundColor = 'white';
 })
