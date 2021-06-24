@@ -99,7 +99,7 @@ h3 a {
     font-size: 15px;
     display: flex;
     flex-wrap: wrap;
-   
+    justify-content: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:rgb(238, 83, 148)
 }

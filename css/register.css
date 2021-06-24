@@ -3,14 +3,19 @@
     margin: 0;
     padding: 0;
 }    
+.caja{
+    
+    align-items: center;
+    
+}
 .form{
     display: flex;
     justify-content: center;
 }
 body {
+    font-family: 'Staatliches', cursive;
     background-color: black;
     color: white;
-    font-family: 'Staatliches', cursive;
 }
 .logo img{
     width: 100%;
@@ -123,6 +128,10 @@ h3 a {
     color:rgb(255, 123, 196);
     text-decoration: none;
 }  
+.text{
+    font-family: 'Staatliches', cursive;
+
+}
 /* CSS DEL SEARCH*/
 .inicio{
     align-items: center;
@@ -136,7 +145,7 @@ h3 a {
     font-size: 15px;
     display: flex;
     flex-wrap: wrap;
-   
+   justify-content: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:rgb(238, 83, 148)
 } 
