@@ -60,6 +60,12 @@ let generohead = document.querySelector('.genero')
 let playhead = document.querySelector('.play')
 let usuhead = document.querySelector('.usuario')
 let loghead = document.querySelector('.logeate')
+let inMajo = document.querySelector('.inMajo')
+let inAbri = document.querySelector('.inAbri')
+let inPancho = document.querySelector('.inPancho')
+let mailMajo = document.querySelector('.mailMajo')
+let mailAbri = document.querySelector('.mailAbri')
+let mailPancho = document.querySelector('.mailPancho')
 
 generohead.addEventListener('mouseover', function(){
     generohead.style.color = 'rgb(255, 123, 196';
@@ -88,6 +94,49 @@ loghead.addEventListener('mouseover', function(){
 loghead.addEventListener('mouseout', function(){
     loghead.style.color = 'white';
 })
+inAbri.addEventListener('mouseover', function(){
+    inAbri.style.color = 'rgb(83, 189, 238)';
+})
+inAbri.addEventListener('mouseout', function(){
+    inAbri.style.color = 'white';
+})
+
+inMajo.addEventListener('mouseover', function(){
+    inMajo.style.color = 'rgb(83, 189, 238)';
+})
+inMajo.addEventListener('mouseout', function(){
+    inMajo.style.color = 'white';
+})
+
+inPancho.addEventListener('mouseover', function(){
+    inPancho.style.color = 'rgb(83, 189, 238)';
+})
+inPancho.addEventListener('mouseout', function(){
+    inPancho.style.color = 'white';
+})
+
+mailAbri.addEventListener('mouseover', function(){
+    mailAbri.style.color = 'rgb(255, 123, 196';
+})
+mailAbri.addEventListener('mouseout', function(){
+    mailAbri.style.color = 'white';
+})
+
+mailMajo.addEventListener('mouseover', function(){
+    mailMajo.style.color = 'rgb(255, 123, 196';
+})
+mailMajo.addEventListener('mouseout', function(){
+    mailMajo.style.color = 'white';
+})
+
+mailPancho.addEventListener('mouseover', function(){
+    mailPancho.style.color = 'rgb(255, 123, 196';
+})
+mailPancho.addEventListener('mouseout', function(){
+    mailPancho.style.color = 'white';
+})
+
+
 
 //Validando Formulario Search
 let formulario = document.querySelector('form');
