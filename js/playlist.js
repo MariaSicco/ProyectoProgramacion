@@ -1,9 +1,9 @@
 let miPlaylist = localStorage.getItem('cancionesFavoritas');
 let arrayPlaylist = JSON.parse(miPlaylist);
-let listaCanciones = document.querySelector('.listaCanciones');
+let listaCanciones = document.querySelector('.misCanciones');
 
 if(arrayPlaylist.length === 0){
-    listaCanciones.innerHTML = `<li>Aún no hay canciónes en tu playlist </li>`
+    listaCanciones.innerHTML = `<h1>Aún no hay canciónes en tu playlist </h1>`
 }else{
     for (let i = 0; i < arrayPlaylist.length; i++) {
         fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${arrayPlaylist[i]}`)
@@ -11,10 +11,12 @@ if(arrayPlaylist.length === 0){
             return respuesta.json()
         })
         .then(fotos =>{
-            listaCanciones.innerHTML += `<li><img src="${fotos.data.data[0].album.cover_big}></li>`
+            listaCanciones.innerHTML += `<article class="lista"><img src="${fotos.album.cover_big}"> <h1>${fotos.title}</h1> </article>`
         })
         .catch(error =>console.log(error))
     }
+    listaCanciones.classList.add('.lista')
+
 }
 let generohead = document.querySelector('.genero')
 let playhead = document.querySelector('.play')

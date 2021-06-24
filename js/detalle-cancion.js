@@ -4,6 +4,7 @@ let nombreArtista = document.querySelector('.nombreArtista')
 let nombreAlbum = document.querySelector('.nombreAlbum')
 let playlist = document.querySelector('.playlist')
 let video  = document.querySelector('.video')
+let miLista = document.querySelector('.miLista')
 
 let objetoId = new URLSearchParams(location.search)
 let id = objetoId.get('id')
@@ -20,7 +21,9 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
     nombreArtista.innerHTML +=`${Datacancion.artist.name}`
     nombreAlbum.innerHTML += `${Datacancion.album.title}`
     playlist.innerHTML += `<a href="#"> Agregar a mi playlist </a>`
+    miLista.innerHTML += `<a href="playlist.html"> Ir a mi playlist </a>` 
     video.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${Datacancion.id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`  
+
 })
 .catch(error=>{
     console.log(error)
@@ -31,6 +34,7 @@ nombreCancion.classList.add('nombreCancion')
 nombreArtista.classList.add('nombreArtista')
 nombreAlbum.classList.add('nombreAlbum')
 video.classList.add('video')
+miLista.classList.add('miLista')
 
 let misCanciones = [];
 let traerCanciones = localStorage.getItem('cancionesFavoritas')

@@ -179,6 +179,24 @@ h2{
     margin-top: 10px;
     margin-bottom: 20px;
 }
+.miLista a{
+        border-radius: 10px;
+        background-color: rgb(255, 123, 196);
+        color: black;
+        padding: 10px;
+        display: flex;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+.miLista a:hover{
+        color:rgb(255, 123, 196);
+        background-color: black;
+        border-radius: 10px;
+        font-family: 'Staatliches', cursive;
+        border: solid rgb(255, 123, 196);
+    }
 /* CSS DEL SEARCH*/
 .inicio{
     align-items: center;
