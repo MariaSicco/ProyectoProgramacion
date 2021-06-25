@@ -9,10 +9,7 @@ fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/`)
     console.log(dataGeneros);
     for(let i = 1; i < 10; i++){
         generos.innerHTML += `<a href="detallegenero.html?&id=${dataGeneros.data[i].id}" <article class='gen'> <img src=${dataGeneros.data[i].picture_big}> <h1>${dataGeneros.data[i].name}</h1> </article> </a>`
-    }
-    
-       
-    
+    }   
 })
 .catch(error=>{
     console.log(error);
@@ -90,8 +87,6 @@ mailPancho.addEventListener('mouseover', function(){
 mailPancho.addEventListener('mouseout', function(){
     mailPancho.style.color = 'white';
 })
-
-
 
 //Validando Formulario Search
 let formulario = document.querySelector('form');

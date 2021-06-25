@@ -11,7 +11,6 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
 .then(respuesta=>{
     return respuesta.json()
 })
-
 .then(function(cantante){
     console.log(cantante)
     artista.innerHTML += `<article> <img src="${cantante.picture_big}"> <h1>${cantante.name}</h1> </article>`
@@ -102,8 +101,6 @@ mailPancho.addEventListener('mouseover', function(){
 mailPancho.addEventListener('mouseout', function(){
     mailPancho.style.color = 'white';
 })
-
-
 
 //Validando Formulario Search
 let formulario = document.querySelector('form');

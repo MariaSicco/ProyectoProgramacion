@@ -18,10 +18,6 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${bus
                         <p class="tituloBusqueda"><a href="detallecancion.html?id=${dataBusqueda.data[i].id}"> ${dataBusqueda.data[i].title} </a></p>
                     </article>`
    }
-   if(dataBusqueda.data.length == 0){
-      alert('La busqueda no trajo resultados')
-   }
-   
 })
 .catch(error =>{
    console.log(error);
@@ -34,36 +30,32 @@ let buscar1 = document.querySelector('#buscar');
 let mensaje = document.getElementById('mensaje')
 
 formulario.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(buscar1.value === ''){
-        mensaje.innerHTML = ' ⊗ El campo nombre no puede estar vacio';
-        mensaje.classList.add('mensajeError');
-        buscar1.focus();
-    }else if(buscar1.value.length < 3){
-        mensaje.innerHTML = '⊗ La cantidad mínima de caracteres son tres';
-        mensaje.classList.add('mensajeError');
-        buscar1.focus();
-    }else{
-        formulario.submit();
-    }
+   e.preventDefault();
+   if(buscar1.value === ''){
+      mensaje.innerHTML = ' ⊗ El campo nombre no puede estar vacio';
+      mensaje.classList.add('mensajeError');
+      buscar1.focus();
+   }else if(buscar1.value.length < 3){
+      mensaje.innerHTML = '⊗ La cantidad mínima de caracteres son tres';
+      mensaje.classList.add('mensajeError');
+      buscar1.focus();
+   }else{
+      formulario.submit();
+   }
 })
 
 buscar1.addEventListener('input', function(){
-    mensaje.innerHTML = '';
-    mensaje.classList.remove('mensajeError');
+   mensaje.innerHTML = '';
+   mensaje.classList.remove('mensajeError');
 })
 buscar1.addEventListener('focus', function(){
-    buscar1.style.color = 'black';
-    buscar1.style.backgroundColor = 'rgb(222, 255, 78)';
+   buscar1.style.color = 'black';
+   buscar1.style.backgroundColor = 'rgb(222, 255, 78)';
 })
 buscar1.addEventListener('blur', function(){
-    buscar1.style.color = 'black';
-    buscar1.style.backgroundColor = 'white';
+   buscar1.style.color = 'black';
+   buscar1.style.backgroundColor = 'white';
 })
-
-
-
-
 
 //EVENTOS
 let generohead = document.querySelector('.genero')

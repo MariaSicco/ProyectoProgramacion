@@ -16,8 +16,8 @@ if(arrayPlaylist.length === 0){
         .catch(error =>console.log(error))
     }
     listaCanciones.classList.add('.lista')
-
 }
+
 let generohead = document.querySelector('.genero')
 let playhead = document.querySelector('.play')
 let usuhead = document.querySelector('.usuario')
@@ -90,9 +90,6 @@ mailPancho.addEventListener('mouseout', function(){
     mailPancho.style.color = 'white';
 })
 
-
-
-
 //Validando Formulario Search
 let formulario = document.querySelector('form');
 let buscar1 = document.querySelector('#buscar');
@@ -113,6 +110,8 @@ formulario.addEventListener('submit',function(e){
         formulario.submit();
     }
 })
+    
+//EVENTOS INPUT-FOCUS-BLUR
 
 buscar1.addEventListener('input', function(){
     mensaje.innerHTML = '';

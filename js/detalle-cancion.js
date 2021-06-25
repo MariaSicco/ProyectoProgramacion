@@ -23,7 +23,6 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
     playlist.innerHTML += `<a href="#"> Agregar a mi playlist </a>`
     miLista.innerHTML += `<a href="playlist.html"> Ir a mi playlist </a>` 
     video.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${Datacancion.id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`  
-
 })
 .catch(error=>{
     console.log(error)
@@ -36,6 +35,7 @@ nombreAlbum.classList.add('nombreAlbum')
 video.classList.add('video')
 miLista.classList.add('miLista')
 
+//PLAYLIST
 let misCanciones = [];
 let traerCanciones = localStorage.getItem('cancionesFavoritas')
 
@@ -140,7 +140,6 @@ mailPancho.addEventListener('mouseover', function(){
 mailPancho.addEventListener('mouseout', function(){
     mailPancho.style.color = 'white';
 })
-
 
 //Validando Formulario Search
 let formulario = document.querySelector('form');

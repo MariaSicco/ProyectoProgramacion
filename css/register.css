@@ -3,10 +3,8 @@
     margin: 0;
     padding: 0;
 }    
-.caja{
-    
+.caja{ 
     align-items: center;
-    
 }
 .form{
     display: flex;
@@ -26,7 +24,6 @@ body {
     text-align: center;
     color: white;
     margin-bottom: 20px;
-    
 }
 .inicio{
     justify-content: space-around; 
@@ -114,8 +111,7 @@ button{
     font-size: 20px;
     font-family: 'Staatliches', cursive;
     font-weight:600;
-    color:black;
-    
+    color:black; 
 }
 button:hover{
     color: rgb(222, 255, 78);
@@ -135,13 +131,11 @@ h3 a {
 /*CC JS*/
 .form .mensajeError{
     display: flex;
-    justify-content: center;
-  
+    justify-content: center; 
 }
 /* CSS DEL SEARCH*/
 .inicio{
     align-items: center;
-  
 }
 .buscador{
     display: flex;

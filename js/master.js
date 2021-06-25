@@ -10,10 +10,7 @@ fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/track
     console.log(dataMusica);
     for(let i = 0; i < 6;i++){
         musica.innerHTML += `<a href="detallecancion.html?&id=${dataMusica.data[i].id}"<article class='lista'> <img src=${dataMusica.data[i].album.cover_big}> <h1>${dataMusica.data[i].title}</h1> </article></a>`
-    }
-    
-       
-    
+    }  
 })
 .catch(error=>{
     console.log(error);
@@ -22,8 +19,6 @@ fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/track
 
 //Fetch Artistas
 let artistas = document.querySelector('.artista')
-
-
 
 fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists')
 
@@ -133,8 +128,6 @@ mailPancho.addEventListener('mouseover', function(){
 mailPancho.addEventListener('mouseout', function(){
     mailPancho.style.color = 'white';
 })
-
-
 
 //Validando Formulario Search
 let formulario = document.querySelector('form');

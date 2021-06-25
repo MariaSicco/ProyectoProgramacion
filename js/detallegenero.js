@@ -7,7 +7,7 @@ let id = objetoId.get('id')
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/artists`)
 
 .then(response=>{
-    return response.json()
+  return response.json()
 })
 .then(dataGenero=>{
     
@@ -17,7 +17,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/ar
   }
 })
 .catch(error=>{
-    console.log(error);
+  console.log(error);
 })
 
 fotoArtista.classList.add('fotoArtista')
@@ -102,8 +102,6 @@ mailPancho.addEventListener('mouseover', function(){
 mailPancho.addEventListener('mouseout', function(){
   mailPancho.style.color = 'white';
 })
-
-
 
 //Validando Formulario Search
 let formulario = document.querySelector('form');

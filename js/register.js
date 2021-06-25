@@ -8,8 +8,6 @@ window.addEventListener('load', function(){
     let date = document.querySelector('#date')
     let genero = document.querySelector('#genero')
     let verificacion = document.querySelector('#verificacion')
-   
-
 
     //SPAN
     let mensaje = document.getElementById('mensaje');
@@ -19,7 +17,6 @@ window.addEventListener('load', function(){
     let mensaje5 = document.getElementById('mensaje5')
     let mensaje6 = document.getElementById('mensaje6')
 
-
     // NOMBRE
     formulario.addEventListener('submit', function(e){
         e.preventDefault();
@@ -28,14 +25,11 @@ window.addEventListener('load', function(){
             mensaje.innerHTML = '⊗ El campo nombre no puede estar vacio';
             mensaje.classList.add('mensajeError');
             nombre.focus();
-        }else if(nombre.value.length < 3){
-            mensaje.innerHTML = '⊗ La cantidad mínima de caracteres son tres';
-            mensaje.classList.add('mensajeError');
-            nombre.focus();
         }else{
             formulario.submit();
         }
     })
+
     //MAIL
     formulario.addEventListener('submit', function(e){
         e.preventDefault();
@@ -52,6 +46,7 @@ window.addEventListener('load', function(){
             formulario.submit();
         }
     })
+
     //CONTRASEÑA
     formulario.addEventListener('submit', function(e){
         e.preventDefault();
@@ -68,6 +63,7 @@ window.addEventListener('load', function(){
             formulario.submit();
         }
     })
+
     //DATE  
     formulario.addEventListener('submit', function(e){
         e.preventDefault();
@@ -80,6 +76,7 @@ window.addEventListener('load', function(){
             formulario.submit();
         }
     })  
+
     //GENERO
     formulario.addEventListener('submit', function(e){
         e.preventDefault();
@@ -91,7 +88,8 @@ window.addEventListener('load', function(){
         }else{
             formulario.submit();
         }
-    })  
+    }) 
+
     //VERIFICACION
     formulario.addEventListener('submit', function(e){
         e.preventDefault();
@@ -105,7 +103,7 @@ window.addEventListener('load', function(){
         }
     })  
    
-    
+    //EVENTOS INPUT-FOCUS-BLUR
 
     // NOMBRE
     nombre.addEventListener('input', function(){
@@ -154,6 +152,7 @@ window.addEventListener('load', function(){
         contraseña.style.color = 'black';
         contraseña.style.backgroundColor = 'white';
     })
+
     //DATE
     date.addEventListener('input', function(){
         mensaje4.innerHTML = '';
@@ -169,11 +168,13 @@ window.addEventListener('load', function(){
         date.style.color = 'black';
         date.style.backgroundColor = 'white';
     })
+
     //GENERO
     genero.addEventListener('input', function(){
         mensaje5.innerHTML = '';
         mensaje5.classList.remove('mensajeError');
     })
+    
     //VERIFICACION
     verificacion.addEventListener('input', function(){
         mensaje6.innerHTML = '';

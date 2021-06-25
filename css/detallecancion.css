@@ -100,25 +100,19 @@ h2{
 }
 .opcIzq a{
     color: white;
- 
 }
 .opcIzq p{
     text-align: center;
     margin-bottom: 20px;
-  
-    
 }
 .opcDer a{
     color: white;
     text-align: center;
-    margin: 20px;
-    
-   
+    margin: 20px; 
 }
 .opcDer p{
     text-align: center;
     margin-bottom: 20px;
-    
 }
 .playlist a{
     border-radius: 10px;
@@ -142,7 +136,6 @@ h2{
 /* CSS DEL SEARCH*/
 .inicio{
     align-items: center;
-  
 }
 .buscador{
     display: flex;
@@ -154,7 +147,6 @@ h2{
     font-size: 15px;
     display: flex;
     flex-wrap: wrap;
-   
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:rgb(238, 83, 148)
 }
@@ -171,13 +163,11 @@ h2{
     font-size:40px ;
     text-align: center;
     margin-bottom: 15px;
-    
 }
 .nombreArtista{
     text-align: center;
     margin-bottom: 15px;
     font-size: 25px;
-    
 }
 .nombreAlbum{
     text-align: center;
@@ -201,23 +191,23 @@ h2{
     margin-bottom: 20px;
 }
 .miLista a{
-        border-radius: 10px;
-        background-color: rgb(255, 123, 196);
-        color: black;
-        padding: 10px;
-        display: flex;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-bottom: 50px;
-        justify-content: center;
-    }
+    border-radius: 10px;
+    background-color: rgb(255, 123, 196);
+    color: black;
+    padding: 10px;
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 50px;
+    justify-content: center;
+}
 .miLista a:hover{
-        color:rgb(255, 123, 196);
-        background-color: black;
-        border-radius: 10px;
-        font-family: 'Staatliches', cursive;
-        border: solid rgb(255, 123, 196);
-    }
+    color:rgb(255, 123, 196);
+    background-color: black;
+    border-radius: 10px;
+    font-family: 'Staatliches', cursive;
+    border: solid rgb(255, 123, 196);
+}
 
 @media (min-width:768px){
     .encabezado{
@@ -279,10 +269,8 @@ h2{
         margin-top: 30px;
         padding-right:70px;
         padding-left: 70px;
-        
     }
     .fotos img{
-        
         height: 450px;
     }
 
@@ -291,7 +279,6 @@ h2{
         margin-bottom: 15px;
     }
     .nombreArtista{
-      
         font-size: 30px;
     }
     .nombreAlbum{
@@ -316,8 +303,7 @@ h2{
     @media (min-width:1024px){
         .encabezado{
             display: flex; 
-            justify-content: center;
-            
+            justify-content: center; 
         }   
         .logo{
             width: 100%;

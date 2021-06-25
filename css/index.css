@@ -55,7 +55,6 @@ h3{
 p{
     text-align: center;
     margin-bottom: 20px;
-    
 }
 .artistas h3{
     margin: 20px;
@@ -90,7 +89,6 @@ p{
 .genero li a {
     color: white;
     font-size: 40px;
-
 }
 .disco{
     display: block;
@@ -99,7 +97,6 @@ p{
 /* CSS DEL SEARCH*/
 .inicio{
     align-items: center;
-  
 }
 .buscador{
     display: flex;
@@ -145,7 +142,6 @@ h2{
     flex-wrap: wrap;
     padding: 50px;
     justify-content: center;
-    
 }
 .musica h1{
     color: white;

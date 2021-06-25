@@ -26,11 +26,11 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
     for (let i = 0; i < 5; i++) {
         topAlbum.innerHTML += ` <ol><li class="topC">${album.tracks.data[i].title}</li></ol>`
     }
-
 })
 .catch(error=>{
     console.log(error)
 })
+
 fotoAlbum.classList.add('fotoAlbum')
 nombreAlbum.classList.add('nombreAlbum')
 nombreArtista.classList.add('nombreArtista')
@@ -118,9 +118,6 @@ mailPancho.addEventListener('mouseover', function(){
 mailPancho.addEventListener('mouseout', function(){
     mailPancho.style.color = 'white';
 })
-
-
-
 
 //Validando Formulario Search
 let formulario = document.querySelector('form');

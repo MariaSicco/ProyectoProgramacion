@@ -5,9 +5,9 @@
 }
 /* Genero*/
 body{
-        font-family: 'Staatliches', cursive;
-        background-color: black;
-        color: white;
+    font-family: 'Staatliches', cursive;
+    background-color: black;
+    color: white;
 }
 .generos{
     display: flex;
@@ -18,7 +18,6 @@ body{
     align-items: center;
     justify-content: center;
     margin-right: 0;
-     
 }
 img{
     width: 100%;
@@ -32,7 +31,6 @@ img{
 .gen{
     padding: 20px;
 }
-
 
 /* Detalle genero*/
 .logo img{
@@ -62,8 +60,7 @@ h1{
     background-color: rgb(222, 255, 78);
     color: black;
     margin-top: 10px;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 h2{
     text-align: center;
@@ -80,7 +77,6 @@ img{
 .lista img{
     align-items: center;
     border: solid 3px white;
-    
     width: 70%;
     margin-left: 15%;
     margin-right:15%; 
@@ -95,8 +91,7 @@ h3{
     margin-bottom: 5px;
     text-align: center; 
 }
-.opcIzq a{
-    
+.opcIzq a{ 
     color: white;
     text-decoration: none;
 }
@@ -138,7 +133,6 @@ h3{
 }
 .fotos img{
     border:solid white;
-    
 }
 .nombreArt{ 
     display: flex;
@@ -156,15 +150,14 @@ h3{
 .caja{
     align-items: center;
     font-size: 25px;
-    
 }
 .generos{
     justify-content: center;
 }
+
 /* CSS DEL SEARCH*/
 .inicio{
     align-items: center;
-  
 }
 .buscador{
     display: flex;
@@ -176,7 +169,6 @@ h3{
     font-size: 15px;
     display: flex;
     flex-wrap: wrap;
-   
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:rgb(238, 83, 148)
 }
@@ -218,7 +210,6 @@ h3{
         margin: 0;
         margin-top: 20px;
         justify-content: center;
-       
     }
     .lista img{
         display: flex;
@@ -226,7 +217,6 @@ h3{
         width: 95%;
         margin: 0px;
         margin-left: 10px;
-
     }
     .masEsc{
         display: flex;
