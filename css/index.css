@@ -95,8 +95,27 @@ p{
 .disco{
     display: block;
 }
-h1{
+
+/* CSS DEL SEARCH*/
+.inicio{
+    align-items: center;
+  
 }
+.buscador{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 7px;
+}
+.mensajeError{
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(238, 83, 148)
+}
+
 
 @media (min-width:768px){
 .encabezado{

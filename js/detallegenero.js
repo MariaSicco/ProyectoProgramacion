@@ -12,7 +12,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/ar
 .then(dataGenero=>{
     
   for(i=0; i<12; i++){
-    fotoArtista.innerHTML += `<main class="caja"><article class="fotos"> <img src="${dataGenero.data[i].picture_big}">  </article><p class="nombreArt">${dataGenero.data[i].name}</p></main>`
+    fotoArtista.innerHTML += `<a href="detallecantante.html?id=${dataGenero.data[i].id}" <main class="caja"><article class="fotos"> <img src="${dataGenero.data[i].picture_big}">  </article><p class="nombreArt">${dataGenero.data[i].name}</p></main></a>`
 
   }
 })

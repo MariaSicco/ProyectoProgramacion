@@ -147,11 +147,12 @@ h3{
    margin-right: 7px;
 }
 h2{
+    font-family: 'Staatliches', cursive;
     text-align: center;
     margin-bottom: 20px;
     background-color: rgb(222, 255, 78);
     color: black;
-    font-size: 15px;
+    font-size: 18px;
     
 }
 .opcIzq a{
@@ -175,38 +176,49 @@ h2{
     margin-bottom: 20px;
     
 }
-.fotos{
+
+/*CSS JS DETALLE GENERO*/
+.fotoAlbum{
     padding: 20px;
 }
-.fotos img{
+.fotoAlbum img{
     border:solid white;
 }
-
 .nombreAlbum{
     font-size:40px ;
     text-align: center;
     margin-bottom: 15px;
-    
-    
+    font-family: 'Staatliches', cursive;
 }
 .nombreArtista{
     text-align: center;
     margin-bottom: 15px;
     font-size: 25px;
-    
+    font-family: 'Staatliches', cursive;
 }
-.fecha{
-    font-size:20px ;
-    text-align: center;
-    margin-bottom: 15px;
-    
+.fechas{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
 }
+
 .generos{
-    font-size:20px ;
-    text-align: center;
-    margin-bottom: 15px;
-    
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px; 
 }
+.topC{
+    font-size:15px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+.topAlbum{
+    margin-bottom: 30px;
+}
+
 /* CSS DEL SEARCH*/
 .inicio{
     align-items: center;
@@ -215,6 +227,8 @@ h2{
 .buscador{
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 7px;
 }
 .mensajeError{
     font-size: 15px;
@@ -314,6 +328,42 @@ h2{
     .generos{
         font-size: 20px;
     }
+
+    /*CSS JS DETALLE GENERO*/
+    .fotoAlbum{
+        margin-top: 30px;
+        padding-right:70px;
+        padding-left: 70px;
+    }
+    .fotoAlbum img{
+        width: 500px;
+       
+    }
+    .nombreAlbum{
+        font-size:50px ;
+        text-align: center;
+        margin-bottom: 15px;
+        font-family: 'Staatliches', cursive;
+    }
+    .nombreArtista{
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 30px;
+        font-family: 'Staatliches', cursive;
+    }
+    .fechas{
+        margin-bottom: 20px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    
+    .topC{
+        font-size:20px ;
+    }
+    .topAlbum{
+        margin-bottom: 35px;
+    }
+    
 }
 @media (min-width:1024px){
     .encabezado{
@@ -387,6 +437,40 @@ h2{
     .generos{
         font-size: 25px;
     } 
-   
+    /*CSS JS DETALLE GENERO*/
+    .fotoAlbum{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        padding-right:100px;
+        padding-left: 100px;
+    }
+    .fotoAlbum img{
+        width: 700px;
+        height: 570px;
+       
+    }
+    .nombreAlbum{
+        font-size:70px ;
+        text-align: center;
+        margin-bottom: 15px;
+        font-family: 'Staatliches', cursive;
+    }
+    .nombreArtista{
+        margin-bottom: 30px;   
+    }
+    .fechas{
+        font-size: 25px;
+    }
+    .generos{
+        font-size: 25px;   
+    }
+    .topC{
+        font-size:25px ;
+    }
+    .topAlbum{
+        margin-bottom: 35px;
+    }  
 }
 

@@ -8,6 +8,7 @@ window.addEventListener('load', function(){
     let date = document.querySelector('#date')
     let genero = document.querySelector('#genero')
     let verificacion = document.querySelector('#verificacion')
+   
 
 
     //SPAN
@@ -103,6 +104,8 @@ window.addEventListener('load', function(){
             formulario.submit();
         }
     })  
+   
+    
 
     // NOMBRE
     nombre.addEventListener('input', function(){

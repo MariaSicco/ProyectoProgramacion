@@ -20,17 +20,23 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
     fotoAlbum.innerHTML += `<article class="fotos"> <img src="${album.cover_big}"> </article>`
     nombreAlbum.innerHTML += `${album.title} `
     nombreArtista.innerHTML +=`${album.artist.name}`
-    fecha.innerHTML += ` Fecha de Publicacion: ${album.release_date} `
+    fecha.innerHTML += `  Fecha de Publicacion:${album.release_date}`
     genero.innerHTML +=  ` Genero: ${album.genres.data[0].name}`
 
     for (let i = 0; i < 5; i++) {
-        topAlbum.innerHTML += `<ul><li>${album.tracks.data[i].title}</li></ul>`
+        topAlbum.innerHTML += ` <ol><li class="topC">${album.tracks.data[i].title}</li></ol>`
     }
 
 })
 .catch(error=>{
     console.log(error)
 })
+fotoAlbum.classList.add('fotoAlbum')
+nombreAlbum.classList.add('nombreAlbum')
+nombreArtista.classList.add('nombreArtista')
+fecha.classList.add('fechas')
+genero.classList.add('generos')
+topAlbum.classList.add('topAlbum')
 
 //EVENTOS
 let generohead = document.querySelector('.genero')
