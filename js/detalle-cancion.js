@@ -45,7 +45,8 @@ if(traerCanciones != null){
 if(misCanciones.includes(id)){
     playlist.innerHTML = `<a href="#"> Quitar de mi playlist </a>`
 }
-playlist.addEventListener('click', function(){
+playlist.addEventListener('click', function(e){
+    e.preventDefault()
     if(misCanciones.includes(id)){
         let posicionCancion = misCanciones.indexOf(id);
         misCanciones.splice(posicionCancion,1);
